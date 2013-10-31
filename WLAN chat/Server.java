@@ -47,9 +47,9 @@ public class Server {
 
 		while (true) {
 			try {
-				System.out.println("等待客户端连接。。");
+				System.out.println("waiting for a server to connect..");
 				Socket socket = server.accept();
-				System.out.println("一个客户端连接了！");
+				System.out.println("a server has been successfully connected!");
 				
 				ClientHandler handler = new ClientHandler(socket);
 				
