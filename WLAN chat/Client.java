@@ -37,10 +37,10 @@ public class Client {
 			Scanner scanner = new Scanner(System.in);
 			String nickName = "";
 			while(nickName.length() < 2) {
-				System.out.println("請輸入您的昵稱(最少2位)：");
+				System.out.println("please type in your nick name: ")
 				nickName  = scanner.nextLine().trim();
 			}
-			System.out.println("你好" + nickName + "， 開始聊天吧");
+			System.out.println("hello," nickName + "let's chat!");
 			while (true) {
 				pw.println(nickName +": "+scanner.nextLine());
 				pw.flush();
